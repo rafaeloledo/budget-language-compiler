@@ -20,7 +20,7 @@ the second in the `C:\` root folder
 
 and the `masm32\bin` folder in the path with `ml.exe`
 
-## diclaimers
+## disclaimers
 
 the current `.cmd` build script considers the `SDK` version of your system
 make sure it matches
