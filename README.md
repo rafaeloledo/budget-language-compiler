@@ -17,7 +17,9 @@ make possible deps relative to project
 the current dependencies are `crinkler` and `masm32`
 
 the first in the path
+
 the second in the `C:\` root folder
+
 and the `masm32\bin` folder in the path with `ml.exe`
 
 ## diclaimers
