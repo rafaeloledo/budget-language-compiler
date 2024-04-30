@@ -1,1 +1,1 @@
-messagebox "Hello, World!"
+print_box("Hello, World!")
