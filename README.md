@@ -26,3 +26,8 @@ and the `masm32\bin` folder in the path with `ml.exe`
 
 the current `.cmd` build script considers the `SDK` version of your system
 make sure it matches
+
+## inspiration
+
+`PlummersSoftwareLLC/HelloAssembly`
+`orosmatthew/hydrogen-cpp`
