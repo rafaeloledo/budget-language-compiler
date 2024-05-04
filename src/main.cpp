@@ -1,4 +1,8 @@
+#include <iostream>
+#include <filesystem>
+
 int main(int argc, char *argv[]) {
-  if (argc != 2) {
-  }
+  const std::filesystem::path current_dir = std::filesystem::current_path();
+
+  std::cout << current_dir;
 }

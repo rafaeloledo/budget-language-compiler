@@ -1,0 +1,10 @@
+^C:\DEV\PROJECTS\BUDGET-LANGUAGE-COMPILER\CMAKELISTS.TXT
+setlocal
+C:\dev\scoop\apps\cmake\3.29.2\bin\cmake.exe -SC:/dev/projects/budget-language-compiler -BC:/dev/projects/budget-language-compiler/build --check-stamp-file C:/dev/projects/budget-language-compiler/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
