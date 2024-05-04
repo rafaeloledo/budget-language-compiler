@@ -3,5 +3,5 @@
 rm -rf build
 mkdir build
 cd build
-cmake -S .. -B . -GNinja
-cmake --build . --config Release
+cmake -S .. -B . -GNinja -DCMAKE_CXX_COMPILER_LAUNCHER=ccache --log-level=WARNING
+cmake --build . --config Release -j12 -- --quiet
