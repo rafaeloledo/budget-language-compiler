@@ -10,4 +10,3 @@ target_include_directories(dbcompiler PUBLIC
   "${PROJECT_BINARY_DIR}"
   "${PROJECT_SOURCE_DIR}/src"
 )
-

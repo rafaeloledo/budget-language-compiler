@@ -3,5 +3,5 @@
 rm -rf build
 mkdir build
 cd build
-cmake -S .. -B . > nul
-cmake --build . --config Release > nul
+cmake -S .. -B . -GNinja
+cmake --build . --config Release
