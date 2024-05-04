@@ -1,6 +1,9 @@
+# vim: ft=yaml
+
 CompileFlags:
   Compiler: clang++
   Add: [
     "/std:c++20",
     "-std=c++20",
+    "-Wall",
   ]
