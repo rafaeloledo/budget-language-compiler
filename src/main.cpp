@@ -1,10 +1,22 @@
-#include <iostream>
+#include <exception>
 #include <filesystem>
+#include <iostream>
+#include <string>
 
-int main(int argc, char *argv[]) {
-  const std::filesystem::path current_dir = std::filesystem::current_path();
+void call_cmd(const std::filesystem::path& p) {
+  std::string str = p.string();
+  const char* s = str.c_str();
+  std::system(s);
+}
 
-  const std::filesystem::path build_script_path = current_dir / "tools\\build_asm.cmd";
+int main(int argc, char* argv[]) {
+  const std::filesystem::path path = std::filesystem::current_path() / "tools\\build_asm.cmd";
 
-  std::cout << build_script_path;
+  try {
+    call_cmd(path);
+  } catch (const std::exception& e) {
+    std::cerr << e.what() << "\n";
+  }
+
+  return 0;
 }
